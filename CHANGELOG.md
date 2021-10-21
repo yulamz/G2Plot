@@ -1,3 +1,71 @@
+#### 2.3.37 (2021-10-16)
+
+##### Documentation Changes
+
+*  demo 增加说明 ([ee5bc822](https://github.com/antvis/g2plot/commit/ee5bc8225b5032e633d7bdc774b8c23d45efc615))
+* **heatmap:**  通过 iframe 嵌入语雀图表指引文档 ([6a00f9b8](https://github.com/antvis/g2plot/commit/6a00f9b87477b14a1c5d3206bfbab54b0a9b1004))
+
+##### New Features
+
+* **venn:**
+  *  韦恩图交互增强（修复图例激活元素交互 & 增强 active、highlight、selected 交互） ([#2911](https://github.com/antvis/g2plot/pull/2911)) ([ed5b71e2](https://github.com/antvis/g2plot/commit/ed5b71e22492b94d1157a6cb7c3f92e130ee1e45))
+  *  韦恩图颜色回调重构 ([#2909](https://github.com/antvis/g2plot/pull/2909)) ([c3694961](https://github.com/antvis/g2plot/commit/c36949619512467024d7458f5d07b01e026615e6))
+* **sunburst:**
+  *  丰富旭日图交互, 点击中心可以上卷 ([#2903](https://github.com/antvis/g2plot/pull/2903)) ([a8758fac](https://github.com/antvis/g2plot/commit/a8758fac13fa4fdb44e93297e7fedbd46f8d7d97))
+  *  旭日图增加 activeDepth 配置,允许配置默认展示的层级深度 ([#2902](https://github.com/antvis/g2plot/pull/2902)) ([b3920c9d](https://github.com/antvis/g2plot/commit/b3920c9d9cf83e9b37059f733bd344658c33e8c7))
+
+##### Bug Fixes
+
+* **box:**  修复箱形图异常点 view 的 label 只能展示一个 ([#2913](https://github.com/antvis/g2plot/pull/2913)) ([994c75d3](https://github.com/antvis/g2plot/commit/994c75d3ad585c582451ec6fd7b9319c4ff233e0))
+* **funnel:** 漏斗图 do not mutable data ([#2900](https://github.com/antvis/g2plot/pull/2900)) ([d92443e1](https://github.com/antvis/g2plot/commit/d92443e1d370b06f8ba86001aee1e51676dac5ca))
+
+#### 2.3.36 (2021-10-08)
+
+##### Documentation Changes
+
+* **funnel:**  漏斗图转化率信息组件文档 api 补全 ([#2894](https://github.com/antvis/g2plot/pull/2894)) ([3a708220](https://github.com/antvis/g2plot/commit/3a708220c14fecda184a97945278c1d484ea894e))
+* **label:**  补充 label position 配置的文档说明 ([#2896](https://github.com/antvis/g2plot/pull/2896)) ([379df35f](https://github.com/antvis/g2plot/commit/379df35f6fdad4442f8d1234ac264d0e8cf895be))
+
+##### New Features
+
+* **gauge:**  仪表盘支持自定义指示器 indicator ([#2892](https://github.com/antvis/g2plot/pull/2892)) ([e36296b1](https://github.com/antvis/g2plot/commit/e36296b18d1f4ad133e5f1c6ed32dba525d1e476))
+* **line:**  修复折线图 marker 交互, 以及丰富折线图自定义 marker demo ([#2895](https://github.com/antvis/g2plot/pull/2895)) ([078a358a](https://github.com/antvis/g2plot/commit/078a358a8e0f667bcf1d2a808bac5c0fc2e9bb08))
+
+##### Bug Fixes
+
+* **sankey:**  桑基图节点顺序需要保证原序 ([#2897](https://github.com/antvis/g2plot/pull/2897)) ([5ad43b72](https://github.com/antvis/g2plot/commit/5ad43b7276f7a49c4ceefcfe929cabc1e10bf2c8))
+* **funnel:**  修复漏斗图数据为 0 时，出现 conversionTag 样式问题 ([#2893](https://github.com/antvis/g2plot/pull/2893)) ([6a0512b7](https://github.com/antvis/g2plot/commit/6a0512b70fe2442f9c9e86b8e1705d53d8d10fd5))
+*  修复开启 animation 引发 state 样式延迟渲染，导致单测错误 ([#2891](https://github.com/antvis/g2plot/pull/2891)) ([0e8de058](https://github.com/antvis/g2plot/commit/0e8de0581e65caf0b615cc63c43590f9dc5b2041))
+
+##### Refactors
+
+* **gauge:**  米轨仪表盘绘制方案改造 & 单测 ([#2890](https://github.com/antvis/g2plot/pull/2890)) ([cc8fa33d](https://github.com/antvis/g2plot/commit/cc8fa33d5c17d64392f1e549b876f62252ee90d4))
+
+#### 2.3.35 (2021-09-26)
+
+##### Chores
+
+* **github actions:**  change macos to ubuntu ([#2869](https://github.com/antvis/g2plot/pull/2869)) ([45c8a5f8](https://github.com/antvis/g2plot/commit/45c8a5f84684009986758017006611d61b772fb7))
+
+##### Documentation Changes
+
+* **label:**  增加一个数据标签的 demo ([#2875](https://github.com/antvis/g2plot/pull/2875)) ([626a50cd](https://github.com/antvis/g2plot/commit/626a50cd4c0277326a4a428f56dda8a1c8b790af))
+* **progress:**  完善了进度条 progressStyle 的回调方法描述文档 ([#2863](https://github.com/antvis/g2plot/pull/2863)) ([240bb18e](https://github.com/antvis/g2plot/commit/240bb18e9346b79ee8f0c7b47ad509a7102fab59))
+*  增加一个漏斗图分析 demo ([#2848](https://github.com/antvis/g2plot/pull/2848)) ([4b3143e6](https://github.com/antvis/g2plot/commit/4b3143e66b82fa89bf069d82a60e7dfdfed9bfe0))
+*  增加一个饼图 demo（个性化标签饼图） ([#2853](https://github.com/antvis/g2plot/pull/2853)) ([7fb1542b](https://github.com/antvis/g2plot/commit/7fb1542b84f8c91ac6cf45ed15ca4775a31c4c87))
+* **changelog:**  删除重复的 changelog ([#2843](https://github.com/antvis/g2plot/pull/2843)) ([f9433c01](https://github.com/antvis/g2plot/commit/f9433c01b5f69ea8a2d9dae21c1c4c6a3f21545d))
+
+#### New Features
+
+* **venn(interaction):**  添加韦恩图 selected 和 active 的交互 ([#2871](https://github.com/antvis/g2plot/pull/2871)) ([bf4b248f](https://github.com/antvis/g2plot/commit/bf4b248f71b5dca1c1aaf7c46689a4bba422f84a))
+
+##### Bug Fixes
+
+* **venn(label):**  处理韦恩图 label 遮挡问题 ([#2861](https://github.com/antvis/g2plot/pull/2861)) ([bec4bb14](https://github.com/antvis/g2plot/commit/bec4bb14a4c97e7e1874672ba45d53b48a36317c))
+* **venn(data):**  处理非法数据 ([#2857](https://github.com/antvis/g2plot/pull/2857)) ([e8cca008](https://github.com/antvis/g2plot/commit/e8cca008f3c42785aaee6e8d5e26a63574240628))
+* **venn(padding):**  兼容非法 padding ([#2855](https://github.com/antvis/g2plot/pull/2855)) ([94adfa44](https://github.com/antvis/g2plot/commit/94adfa4486df46325611de0db9c1ca4075a20968))
+* **compare funnel:**  添加了对比漏斗图案例 ([#2859](https://github.com/antvis/g2plot/pull/2859)) ([5678aa44](https://github.com/antvis/g2plot/commit/5678aa44fa524d719e4c57635df314edc27948ad))
+
 #### 2.3.33 (2021-09-09)
 
 ##### Documentation Changes
